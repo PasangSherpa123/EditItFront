@@ -82,8 +82,6 @@ const Login = () => {
                             : 
                             <MdVisibility onClick={ShowPassword} className="Login__password__Icon"/>}
                     </div>
-                    <div className="Login__forget">Forget your password?</div>
-        
                     <button className="Login__Signin">Sign Up</button>
                     <div className="Login__Signup">
                          <p>Have got an account?</p>
