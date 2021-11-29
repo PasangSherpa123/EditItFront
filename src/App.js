@@ -4,7 +4,7 @@ const App = () => {
   
   return (
     <div>
-      App is nice.
+       This is so nice man.
     </div>
   )
 }
