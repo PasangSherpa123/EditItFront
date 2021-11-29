@@ -1,0 +1,127 @@
+/* //Using root makes the variables accessible to all the child elements in the document. :root is a pseudo element  */
+:root {
+  --color-primary: blue;
+  --color-primary-light:rgba(66, 66, 252, 0.74);
+  --color-primary-dark:rgb(5, 5, 163);
+  --color-grey-light-1:#faf9f9;
+  --color-grey-light-2:#f4f2f2;
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+  --shadow-dark:  rgba(0, 0, 0, 0.3);
+  --line: 1px solid var(--color-grey-light-2);
+  --shadow-light: 0 2rem 5rem rgba(0,0,0,.06); }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /*  10 rem = 62.5% */ }
+
+body {
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 400;
+  background-color: var(--color-grey-light-3);
+  min-height: 100vh;
+  line-height: 1.6; }
+
+.Login {
+  background: #fff;
+  max-width: 55rem;
+  min-width: 20rem;
+  padding: 1rem;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--color-grey-dark-1);
+  border-radius: 1rem; }
+  .Login__header {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin: 1rem; }
+  .Login__OtherDomain {
+    width: 90%;
+    background: var(--color-grey-light-2);
+    margin: 1rem;
+    height: 4rem;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; }
+    .Login__OtherDomain__Logo {
+      height: 2rem;
+      width: 2rem;
+      position: absolute;
+      left: 1rem; }
+    .Login__OtherDomain:hover {
+      cursor: pointer; }
+  .Login__text {
+    width: 90%;
+    height: 4rem;
+    margin: .5rem;
+    padding: 0 .5rem;
+    border-radius: 4px;
+    border: none;
+    background: var(--color-grey-light-3); }
+  .Login__password {
+    width: 100%;
+    height: 4rem;
+    margin: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .Login__password__text {
+      width: 90%;
+      height: 4rem;
+      margin-right: -2rem;
+      padding: 0 .5rem;
+      border-radius: 4px;
+      border: none;
+      background: var(--color-grey-light-3); }
+    .Login__password__Icon {
+      height: 2rem;
+      width: 2rem; }
+  .Login__forget {
+    color: var(--color-primary-light);
+    font-size: 1.3rem;
+    margin: .5rem; }
+    .Login__forget:hover {
+      text-decoration: underline;
+      cursor: pointer; }
+  .Login__Signin {
+    width: 90%;
+    background: var(--color-primary);
+    border: none;
+    height: 3rem;
+    color: #fff;
+    border-radius: 4px; }
+    .Login__Signin:hover {
+      cursor: pointer; }
+  .Login__Signup {
+    width: 20rem;
+    margin: 1rem;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-grey-dark-2); }
+    .Login__Signup__Redirect {
+      color: var(--color-primary-light); }
+      .Login__Signup__Redirect:hover {
+        text-decoration: underline;
+        cursor: pointer; }
