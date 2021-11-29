@@ -6,7 +6,6 @@ const App = () => {
   return (
     <div>
       <Login/>
-       This is so nice man.
     </div>
   )
 }
