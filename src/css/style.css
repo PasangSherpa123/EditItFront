@@ -37,6 +37,22 @@ body {
   min-height: 100vh;
   line-height: 1.6; }
 
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-family: 'Raleway', sans-serif; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family: 'Raleway', sans-serif; }
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  font-family: 'Raleway', sans-serif; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  font-family: 'Raleway', sans-serif; }
+
 .Login {
   background: #fff;
   max-width: 40rem;
@@ -125,3 +141,111 @@ body {
       .Login__Signup__Redirect:hover {
         text-decoration: underline;
         cursor: pointer; }
+
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  height: 6rem;
+  background: #fff;
+  border-bottom: 1px solid var(--color-grey-light-3); }
+  .Navbar__Icons {
+    display: flex;
+    align-items: center;
+    font-size: 1.7rem;
+    margin: 1rem; }
+    .Navbar__Icons__Logo {
+      margin-right: 4rem;
+      font-size: 2.2rem;
+      font-weight: 600; }
+      .Navbar__Icons__Logo:hover {
+        cursor: pointer; }
+    .Navbar__Icons__Home {
+      color: var(--color-primary);
+      margin-right: 4rem; }
+      .Navbar__Icons__Home:hover {
+        cursor: pointer; }
+    .Navbar__Icons__SearchBar {
+      height: 4rem;
+      display: flex;
+      align-items: center; }
+      .Navbar__Icons__SearchBar__IconHandler {
+        height: 4rem;
+        width: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: -4rem;
+        z-index: 10; }
+      .Navbar__Icons__SearchBar__Text {
+        height: 4rem;
+        width: 30rem;
+        padding: 1rem;
+        padding-left: 4rem;
+        border: none;
+        outline: none;
+        background: var(--color-grey-light-4);
+        border-radius: 4px; }
+    .Navbar__Icons__Notification {
+      height: 4rem;
+      width: 4rem;
+      margin-right: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .Navbar__Icons__Notification:hover {
+        cursor: pointer; }
+      .Navbar__Icons__Notification__Logo {
+        height: 2.5rem;
+        width: 2.5rem; }
+    .Navbar__Icons__Profile {
+      display: flex;
+      align-items: center; }
+      .Navbar__Icons__Profile__Name:hover {
+        cursor: pointer; }
+      .Navbar__Icons__Profile__Picture {
+        height: 4rem;
+        width: 4rem;
+        margin-left: 2rem;
+        background: var(--color-grey-light-3);
+        border-radius: 50%; }
+        .Navbar__Icons__Profile__Picture:hover {
+          cursor: pointer; }
+
+.Sidebar {
+  height: calc(100vh - 8vh);
+  background: white;
+  width: 20rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.3rem; }
+  .Sidebar__Routes {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 4rem;
+    width: 17rem;
+    margin: .2rem 0;
+    border-radius: 4px;
+    padding: .4rem; }
+    .Sidebar__Routes:hover {
+      cursor: pointer;
+      background: var(--color-grey-light-3); }
+    .Sidebar__Routes__Logo {
+      margin-right: 1rem; }
+  .Sidebar__Cloud {
+    margin-left: -10rem;
+    color: var(--color-grey-light-4);
+    padding: 1rem;
+    height: 4rem; }
+
+.DashBoard {
+  display: flex; }
+
+.Display {
+  height: calc(100vh - 7vh);
+  flex: 1;
+  background: #fff; }

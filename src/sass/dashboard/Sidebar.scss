@@ -1,0 +1,39 @@
+.Sidebar{
+    height:calc(100vh - 8vh);
+    background:white;
+    width:20rem;
+    padding:1rem;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    font-size:1.3rem;
+    
+    &__Routes{
+        display:flex;
+        align-items:center;
+        justify-content:flex-start;
+        height:4rem;
+        width:17rem;
+        margin:.2rem 0;
+        border-radius: 4px;
+        padding:.4rem;
+        &:hover{
+            cursor: pointer;
+            background:var(--color-grey-light-3);
+        }
+        &__Logo{
+            margin-right:1rem;
+        }
+        
+    }
+    &__Cloud{
+        margin-left:-10rem;
+        color:var(--color-grey-light-4);
+        padding:1rem;
+        height:4rem;
+        
+    }
+}
+.DashBoard{
+    display:flex;
+}

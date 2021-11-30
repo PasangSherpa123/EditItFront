@@ -1,0 +1,95 @@
+
+
+.Navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1rem;
+    height:6rem;
+    background:#fff;
+    border-bottom: 1px solid var(--color-grey-light-3);
+    &__Icons{
+        display:flex;
+        align-items:center;
+        font-size: 1.7rem;
+        margin:1rem;
+        &__Logo{
+            margin-right:4rem;
+            font-size:2.2rem;
+            font-weight:600;
+            &:hover{
+                cursor: pointer;
+
+            }
+        }
+        &__Home{
+            color:var(--color-primary);
+            margin-right:4rem;
+            &:hover{
+                cursor: pointer;
+                
+            }
+        }
+        &__SearchBar{
+            height:4rem;
+            display:flex;
+            align-items:center;
+            &__IconHandler{
+                // background:red;
+                height:4rem;
+                width:4rem;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                margin-right:-4rem;
+                z-index:10;
+            }
+            &__Text{
+                height:4rem;
+                width:30rem;
+                padding:1rem;
+                padding-left:4rem;
+                border:none;
+                outline:none;
+                background: var(--color-grey-light-4);
+                border-radius:4px;
+            }
+             
+        }
+        &__Notification{
+            height:4rem;
+            width:4rem;
+            margin-right:3rem;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            &:hover{
+                cursor: pointer;  
+            }
+            &__Logo{
+                height:2.5rem;
+                width:2.5rem;
+
+            }
+        }
+        &__Profile{
+            display:flex;
+            align-items:center;
+            &__Name{
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            &__Picture{
+                height:4rem;
+                width:4rem;
+                margin-left:2rem;
+                background:var(--color-grey-light-3);
+                border-radius:50%;
+                &:hover{
+                    cursor: pointer; 
+                }
+            }
+        }
+    }
+}
